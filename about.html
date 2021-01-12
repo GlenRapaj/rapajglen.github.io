@@ -27,8 +27,12 @@
     <link rel="icon" type="image/jpg" href="file://C:/Users/user/Desktop/images/coctail.jpg" />
 -->
 
-    <link rel="stylesheet" href="C:\Users\user\Desktop\local-website\css\materialize.css"/>
-    <link rel="stylesheet" href="C:\Users\user\Desktop\local-website\css/styles.css"/>
+    <link rel="stylesheet" href="css/materialize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- Anime css libraria qe merret me animimet -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/site.css">
 
     <style>
 
@@ -53,7 +57,32 @@ html, body {
        /*  margin-top: -64px;   */
       }
 
-
+		.custom-icon {
+			width: 20%;
+			margin-left: 5%;
+			margin-right: auto;
+			margin-top: 5%;
+		}
+		
+		.achivement-sub-container{
+			display : flex;
+			flex-direction : row ;
+		}
+		
+		
+		@media  screen and (max-width: 700px) {
+		
+			.parallax-container {
+				position: relative;
+				overflow: hidden;
+				height: 900px;
+			}
+			
+			.row-padding{
+				padding-top: 5%;
+			}
+			
+		}
 
     </style>
 
@@ -67,14 +96,14 @@ html, body {
 
       <nav >
         <div class="nav-wrapper black">
-          <a href="#" class="brand-logo white-text ">TurtelSoftware</a>
+          <a href="index.html" class="brand-logo white-text ">Tech & Solution</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger right black-text">   <i class="large material-icons">menu</i>  </a>
           
           <ul id="nav-mobile" class="right hide-on-med-and-down">
     
-            <li class="active white-text" ><a href="#"> Home </a></li>
-            <li><a class=" white-text " href="#"> ABOUT </a></li>
-            <li><a class=" white-text " href="#"> PORTOFOLIO </a></li>
+            <li class="active white-text" ><a href="index.html"> Home </a></li>
+            <li><a class=" white-text " href="about.html"> ABOUT </a></li>
+            <li><a class=" white-text " href="portofolio.html"> PORTOFOLIO </a></li>
             <!-- Dropdown Trigger  -->
           <li><a  class="dropdown-trigger white-text" href="#!" data-target="dropdown2" style=" height: 64px; "  >  Services </a></li>
     
@@ -84,31 +113,31 @@ html, body {
 
                   <!-- Dropdown Structure desktop -->
                   <ul id="dropdown2" class="dropdown-content">
-                    <li><a href="#!"> Web Development </a></li>
-                    <li><a href="#!"> Web Designe </a></li>
+                    <li><a href="services.html"> Web Development </a></li>
+                    <li><a href="services.html"> Web Designe </a></li>
                   
                     <li class="divider"></li>
                   
-                    <li><a href="#!"> Fixing Bugs </a></li>
+                    <li><a href="services.html"> Fixing Bugs </a></li>
                   
                     <li class="divider"></li>
-                    <li><a href="#!"> Sql Queries </a></li>
-                    <li><a href="#!"> Web App </a></li>
+                    <li><a href="services.html"> Sql Queries </a></li>
+                    <li><a href="services.html"> Web App </a></li>
                   
                   </ul>
     
             <!-- Dropdown Structure mobile tablet -->
             <ul id="dropdown1" class="dropdown-content">
-              <li><a href="#!"> Web Development </a></li>
-              <li><a href="#!"> Web Designe </a></li>
+              <li><a href="services.html"> Web Development </a></li>
+              <li><a href="services.html"> Web Designe </a></li>
             
               <li class="divider"></li>
             
-              <li><a href="#!"> Fixing Bugs </a></li>
+              <li><a href="services.html"> Fixing Bugs </a></li>
             
               <li class="divider"></li>
-              <li><a href="#!"> Sql Queries </a></li>
-              <li><a href="#!"> Fixing Sql  queries </a></li>
+              <li><a href="services.html"> Sql Queries </a></li>
+              <li><a href="services.html"> Fixing Sql  queries </a></li>
             
             </ul>
     
@@ -116,8 +145,8 @@ html, body {
       <ul class="sidenav" id="mobile-demo">
     
         <li class="active" ><a href="#"> Home </a></li>
-        <li><a href="#"> ABOUT </a></li>
-        <li><a href="/portofolio.html"> PORTOFOLIO </a></li>
+        <li><a href="about.html"> ABOUT </a></li>
+        <li><a href="portofolio.html"> PORTOFOLIO </a></li>
        
        <!-- Dropdown Trigger  -->
       <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Services  <i class="small material-icons white">arrow_drop_down</i> </a></li>
@@ -134,7 +163,7 @@ html, body {
 
  <div class="row" style="margin-bottom: 15%;" >  <!-- wall image -->
     <div>
-        <img alt="" src="C:\Users\user\Desktop\local-website\images\imagefront.jpeg" width="100%"/>
+        <img alt="" src="images/imagefront.jpeg" width="100%"/>
 
         <div style="position: absolute; top : 20%; left: 5%;">
             <h2> Services  </h2>
@@ -153,10 +182,10 @@ html, body {
 
 <div class="row" style="margin-bottom: 15%;"  id="about">  <!-- Fillon About -->
     <div class="col s12 l5 offset-l1" >
-        <img id="paragraphmove" class="responsive-img"  alt="" src="C:\Users\user\Desktop\local-website\images\imagefront.jpeg"  width="100%" />
+        <img id="paragraphmove" class="wow slideInLeft responsive-img"  alt="" src="images/imagefront.jpeg"  width="100%" />
     </div>
     <div class="col s12 l5">
-        <h4> Our Purpose is to Help you to Make Dreams Reality </h4>
+        <h4 class=" wow flipInY " > Our Purpose is to Help you to Make Dreams Reality </h4>
       
         <div class="container">
             <hr style="margin-left: 0px;">
@@ -194,144 +223,160 @@ html, body {
 
 
 <div class="row" style="margin-bottom: 15%; padding-bottom: 3%; background-color :#6eac86; " > 
-    <div class="col s12 l3 offset-l1">
-        <i class="large material-icons blue-text white lighten-3 circle">show_chart</i>
+    <div class="col s3 l3 offset-l1 offset-s5 " style=" margin-bottom: 5%;" >
+        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">show_chart</i>
         <br/>
-        <h5 class="white-text">Strategy</h5>
+        <h5 class="wow slideInLeft white-text">Strategy</h5>
     </div>
 
-    <div class="col s12 l3">
-        <i class="large material-icons blue-text white lighten-3 circle">edit</i>
+    <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;" >
+        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">edit</i>
         <br/>
-        <h5 class="white-text">Design</h5>
+        <h5 class="wow slideInLeft white-text">Design</h5>
     </div>
 
-    <div class="col s12 l3 ">
-        <i class="large material-icons blue-text white lighten-3 circle">build</i>
+    <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;" >
+        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">build</i>
         <br/>
-        <h5 class="white-text">Development</h5>
+        <h5 class="wow slideInLeft white-text">Development</h5>
     </div>
 
 </div>
 
 
+<!-- Fillon pjesa e arritjeve -->
 
 
-<div class="row" id="arritje" >         <!-- Fillon pjesa e arritjeve -->
-    <div class="achivements col s12 show-on-small hide-on-med-and-up " style="padding-bottom: 15%;  " >  
-     <div class="parallax-container show-on-small	 " style=" height: 900px; " >  
-      <div class="parallax">
-    
-        <img src="C:\Users\user\Desktop\local-website\images\achivements.jpeg">
-    
-          <div class="row" style=" margin-top: 5%; " >    <!-- ska mbaruar  -->
-          
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 1 -->
-    
-              <i class="medium material-icons">code</i>
-              <br/>
-              <h5> CMS </h5>
-              <br/>
-              <span class="CMS" > 100 </span>
-    
-            </div>   <!-- Mbaron Card 1 -->
-    
-            <div class="col s12 m6 l3 custom-icon " > <!-- Fillon Card 2 -->
-    
-              <i class="medium material-icons">filter_drama</i>
-              <br/>
-              <h5> API </h5>
-              <br/>
-              <span class="API" > 30 </span>
-    
-            </div>   <!-- Mbaron Card 2 -->
-    
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 3 -->
-    
-              <i class="medium material-icons">build</i>
-              <br/>
-              <h5> Web Development </h5>
-              <br/>
-              <span class="WD" > 200 </span>
-    
-            </div>   <!-- Mbaron Card 3 -->
-    
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 4 -->
-    
-              <i class="medium material-icons">edit</i>
-              <br/>
-              <h5> Web Designe </h5>
-              <br/>
-              <span class="WDE" > 110 </span>
-    
-            </div>   <!-- Mbaron Card 4 -->
-    
-    
-          </div>
-      </div>
-    
-    </div>   
-    </div>  
-    </div>    <!-- Mbaron pjesa e arritjeve -->
-    
-    
     <div id="arritje1"  class="achivements col l12 hide-on-small-only show-on-medium-and-up" style="padding-bottom: 15%; " >   <!-- Fillon pjesa e arritjeve -->
-    <div class="parallax-container " >  
-      <div class="parallax">
-    
-        <img src="C:\Users\user\Desktop\local-website\images\achivements.jpeg">
-    
-          <div class="row" style=" margin-top: 5%; " >    <!-- ska mbaruar  -->
-          
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 1 -->
-    
-              <i class="medium material-icons">build</i>
-              <br/>
-              <h5> Web Development </h5>
-              <br/>
-              <span class="WD" > 200 </span>
-    
-            </div>   <!-- Mbaron Card 1 -->
-    
-            <div class="col s12 m6 l3 custom-icon " > <!-- Fillon Card 2 -->
-    
-              <i class="medium material-icons">edit</i>
-              <br/>
-              <h5> Web Designe </h5>
-              <br/>
-              <span class="WDE" > 110 </span>
-    
-            </div>   <!-- Mbaron Card 2 -->
-    
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 3 -->
-    
-              <i class="medium material-icons">filter_drama</i>
-              <br/>
-              <h5> API </h5>
-              <br/>
-              <span class="API" > 30 </span>
-    
-            </div>   <!-- Mbaron Card 3 -->
-    
-            <div class="col s12 m6 l3 custom-icon  " > <!-- Fillon Card 4 -->
-    
-              <i class="medium material-icons">code</i>
-              <br/>
-              <h5> CMS </h5>
-              <br/>
-              <span class="CMS" > 100 </span>
-    
-            </div>   <!-- Mbaron Card 4 -->
-    
-    
-          </div>
-      </div>
-    
-    </div>   
+		<div class="parallax-container " >  
+			<div class="parallax">
+		
+				<img src="images/achivements.jpeg">
+			
+				<div class="row" style=" margin-top: 5%; " >    <!-- ska mbaruar  -->
+				  
+					<div class="col s12 m12 l12 achivement-sub-container" >
+					  
+						<div class="custom-icon  " > <!-- col s12 m6 l3 Fillon Card 1 -->
+				
+						  <i class="white-text medium material-icons">build</i>
+						  <br/>
+						  <h5 class="white-text" > Web Development </h5>
+						  <br/>
+						  <span class="white-text WD" > 200 </span>
+				
+						</div>   <!-- Mbaron Card 1 -->
+				
+						<div class="custom-icon " > <!-- col s12 m6 l3 Fillon Card 2 -->
+				
+						  <i class="white-text medium material-icons">edit</i>
+						  <br/>
+						  <h5 class="white-text " > Web Designe </h5>
+						  <br/>
+						  <span class="white-text WDE" > 110 </span>
+				
+						</div>   <!-- Mbaron Card 2 -->
+				
+						<div class="custom-icon  " > <!--col s12 m6 l3  Fillon Card 3 -->
+				
+						  <i class="white-text medium material-icons">filter_drama</i>
+						  <br/>
+						  <h5 class="white-text" > API </h5>
+						  <br/>
+						  <span class="white-text API" > 30 </span>
+				
+						</div>   <!-- Mbaron Card 3 -->
+				
+						<div class="custom-icon  " > <!-- col s12 m6 l3 Fillon Card 4 -->
+				
+						  <i class=" white-text medium material-icons">code</i>
+						  <br/>
+						  <h5 class="white-text" > CMS </h5>
+						  <br/>
+						  <span class="white-text CMS" > 100 </span>
+				
+						</div>   <!-- Mbaron Card 4 -->
+					</div>
+			
+				</div>
+			</div>
+		
+		</div>   
     </div>   <!-- Mbaron pjesa e arritjeve -->
 
-    
 
+
+<!-- Fillon pjesa e arritjeve per telefona -->
+
+    <div id="arritje1"  class="achivements col s12 show-on-small hide-on-med-and-up" style="padding-bottom: 15%; " >   
+		<div class="parallax-container " >  
+			<div class="parallax">
+		
+				<img src="images/achivements.jpeg">
+			
+				<div style="display: flex; flex-direction: column; " >
+				
+				<div class="row row-padding" >
+				  
+					<div class="col s3 offset-s5  " > <!-- Fillon Card 1 -->
+			
+					  <i class="white-text medium material-icons">build</i>
+					  <br/>
+					  <h5 class="white-text" > Web Development </h5>
+					  <br/>
+					  <span class="white-text WD" > 200 </span>
+			
+					</div>   <!-- Mbaron Card 1 -->
+					
+				</div>
+				
+				<div class="row row-padding" >
+			
+					<div class="col s3 offset-s5  " > <!--  Fillon Card 2 -->
+			
+					  <i class="white-text medium material-icons">edit</i>
+					  <br/>
+					  <h5 class="white-text " > Web Designe </h5>
+					  <br/>
+					  <span class="white-text WDE" > 110 </span>
+			
+					</div>   <!-- Mbaron Card 2 -->
+			
+				</div>
+				
+				<div class="row row-padding" >
+				
+					<div class="col s3 offset-s5 " > <!--  Fillon Card 3 -->
+			
+					  <i class="white-text medium material-icons">filter_drama</i>
+					  <br/>
+					  <h5 class="white-text" > API </h5>
+					  <br/>
+					  <span class="white-text API" > 30 </span>
+			
+					</div>   <!-- Mbaron Card 3 -->
+			
+				</div>
+			
+				<div class="row row-padding" >
+					<div class="col s3 offset-s5 " > <!--  Fillon Card 4 -->
+			
+					  <i class=" white-text medium material-icons">code</i>
+					  <br/>
+					  <h5 class="white-text" > CMS </h5>
+					  <br/>
+					  <span class="white-text CMS" > 100 </span>
+			
+					</div>   <!-- Mbaron Card 4 -->
+				</div>
+				
+				</div>
+			
+				</div>
+			</div>
+		
+		</div>   
+    </div>   <!-- Mbaron pjesa e arritjeve per telefona -->
 
 
 
@@ -346,7 +391,8 @@ html, body {
 
   <div class="col s12 " >  <!-- Fillon mesazhi  -->
     <span style=" float: left; color: white; font-weight: 400; "  class=" badge red darken-3 ">  Meages temporarly deactivated for maintace purpose!  </span> <br>
-              
+	<span style=" float: left; color: white; font-weight: 400; "  class=" badge green darken-3 ">  Meage us at : rapajglen96@gmail.com  </span> <br>         
+             
       <!-- 
       <div id="posting-data-form">
         
@@ -428,10 +474,31 @@ html, body {
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       
    -->
 <!--  --> 
-   <script src="C:\Users\user\Desktop\local-website\js\jquery-2.2.3.min.js"></script>  
+   <script src="js/jquery-2.2.3.min.js"></script>  
   
-   <script src="C:\Users\user\Desktop\local-website\js\materialize.js"></script>  
-   <script src="C:\Users\user\Desktop\local-website\js\popmotion.global.min.js"></script>  
+   <script src="js/materialize.js"></script>  
+   <!--
+   <script src="js/popmotion.global.min.js"></script>  
+  -->
+  
+   <!-- Wow.js animation library   WOW-master/dist/wow.js -->
+  <script src="js/wow.min.js"></script>
+	<script>
+		wow = new WOW(
+		  {
+			animateClass: 'animated',
+			offset:       100,
+
+		  }
+		);
+		
+		/*
+				offset:       100,
+			callback:     function(box) {
+			  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+		*/
+		wow.init();
+	</script>
   
 
   <script type="text/javascript">
